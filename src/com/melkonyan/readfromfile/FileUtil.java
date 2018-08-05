@@ -3,6 +3,8 @@ package com.melkonyan.readfromfile;
 import com.sun.istack.internal.NotNull;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class FileUtil implements FileUtilMethods {
 
@@ -10,40 +12,35 @@ public final class FileUtil implements FileUtilMethods {
   }
 
   @Override
-  public String readDataFromFile(@NotNull File file) throws IOException {
+  public List<String> readDataFromFile(@NotNull File file) throws IOException {
     BufferedReader bufferedReader = null;
-    String fromFile = null;
+    List<String> fileLines = new ArrayList<>();
 
     try {
       bufferedReader = new BufferedReader(new FileReader(file));
-
-      StringBuilder stringBuilder = new StringBuilder();
       String line = bufferedReader.readLine();
 
       while (line != null) {
-        stringBuilder.append(line);
-        stringBuilder.append(System.lineSeparator());
+        fileLines.add(line);
         line = bufferedReader.readLine();
       }
-      fromFile = stringBuilder.toString();
     } catch (IOException e) {
       e.printStackTrace();
     } finally {
       if (bufferedReader != null) bufferedReader.close();
     }
-//    System.out.print(fromFile);
-    return fromFile;
+
+    return fileLines;
   }
 
   @Override
   public void writeDataIntoFile(@NotNull String data) throws IOException {
-    String str = "Hello";
     String fileName = "output";
     BufferedWriter writer = null;
 
     try {
       writer = new BufferedWriter(new FileWriter(fileName));
-      writer.write(str);
+      writer.write(data);
     } catch (IOException e) {
       e.printStackTrace();
     } finally {
