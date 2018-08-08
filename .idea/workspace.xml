@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a2063bc-84d4-4e98-a846-6163f8062c5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/melkonyan/readfromfile/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/melkonyan/readfromfile/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/melkonyan/readfromfile/ReadFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/melkonyan/readfromfile/ReadFromFile.java" afterDir="false" />
-    </list>
+    <list default="true" id="3a2063bc-84d4-4e98-a846-6163f8062c5b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,32 +20,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="21" />
+          <entry key="java" value="25" />
           <entry key="output" value="4" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="25" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7301" />
+          <entry key="java" value="7314" />
           <entry key="output" value="3" />
           <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7301" />
+          <entry key="JAVA" value="7314" />
           <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
+          <entry key="git.branch.checkout.local" value="2" />
           <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
@@ -63,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/melkonyan/readfromfile/ReadFromFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="124">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +82,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="creating_module_for_reading_from_file" />
       </map>
     </option>
   </component>
@@ -94,7 +91,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/ArrayMethods.java" />
         <option value="$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SpiralOutput.java" />
-        <option value="$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SnailPrint.java" />
         <option value="$PROJECT_DIR$/src/com/melkonyan/readfromfile/input.txt" />
         <option value="$PROJECT_DIR$/output" />
         <option value="$PROJECT_DIR$/output.txt" />
@@ -102,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/com/melkonyan/readfromfile/FileUtil.java" />
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/src/com/melkonyan/readfromfile/ReadFromFile.java" />
+        <option value="$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SnailPrint.java" />
       </list>
     </option>
   </component>
@@ -143,6 +140,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="melkonyan" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ManipulationsWithArrays" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ManipulationsWithArrays" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="melkonyan" type="462c0819:PsiDirectoryNode" />
+              <item name="readfromfile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -152,7 +156,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533762998630" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533763067753" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -294,9 +298,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.329927" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.29051095" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329927" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329927" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -308,16 +312,41 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
-        <watch expression="toFile" language="JAVA" />
-        <watch expression="lettersWithCoordinates" language="JAVA" />
-        <watch expression="coordinates" language="JAVA" />
-        <watch expression="charAtCurrentPosition" language="JAVA" />
+        <watch expression="array[row][column] " language="JAVA" />
+        <watch expression="row" language="JAVA" />
+        <watch expression="column" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -383,27 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/ArrayMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SpiralOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SnailPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -465,10 +473,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/ArrayMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SnailPrint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SnailPrint#0;class#SnailPrint#0" />
+            <element signature="method#initArrayWithResult#0;class#SnailPrint#0" />
+            <element signature="method#initArray#0;class#SnailPrint#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/melkonyan/manipulationswitharrays/SpiralOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/melkonyan/readfromfile/ReadFromFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="124">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
