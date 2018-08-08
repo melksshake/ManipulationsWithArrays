@@ -1,40 +1,21 @@
 package com.melkonyan.readfromfile;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.List;
 
 public class ReadFromFile {
-  public static void main(String[] args) throws IOException {
-    File file = new File("D:\\PROGECTS\\IDEAProgects\\ManipulationsWithArrays\\src\\com\\melkonyan\\readfromfile\\input.txt");
+  public static void main(String[] args) {
+    final String modelString = "OneTwoTrip";
+    final String errorMessage = "Impossible";
 
-    String data = dataFromFile(file);
+    FileUtil fileUtil = new FileUtil();
+    File inputFile = new File("input.txt");
 
-
-  }
-
-  private static String dataFromFile(File file) throws IOException {
-    BufferedReader bufferedReader = null;
-    String fromFile = null;
-    try {
-      bufferedReader = new BufferedReader(new FileReader(file));
-
-      StringBuilder stringBuilder = new StringBuilder();
-      String line = bufferedReader.readLine();
-
-      while (line != null) {
-        stringBuilder.append(line);
-        stringBuilder.append(System.lineSeparator());
-        line = bufferedReader.readLine();
-      }
-      fromFile = stringBuilder.toString();
-    } catch (IOException e) {
-      e.printStackTrace();
-    } finally {
-      bufferedReader.close();
+    List<String> toFile = fileUtil.proceedToCharPositions(modelString, fileUtil.readDataFromFile(inputFile));
+    if (toFile == null) {
+      fileUtil.writeDataIntoFile(errorMessage);
+    } else {
+      fileUtil.writeDataIntoFile(toFile);
     }
-//    System.out.print(fromFile);
-    return fromFile;
   }
 }
