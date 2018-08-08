@@ -15,12 +15,10 @@ public class ReadFromFile {
 
     CharSequence modelString = "OneTwoTrip";
 
-    StringBuilder coordinates = new StringBuilder();
-
-    for (int i = 1; i < dataFromFile.size(); i++) {
-      for (int k = 0; k < modelString.length(); k++) {
+    for (int k = 0; k < modelString.length(); k++) {
+      for (int i = 1; i < dataFromFile.size(); i++) {
+        StringBuilder coordinates = new StringBuilder();
         if (dataFromFile.get(i).contains(String.valueOf(modelString.charAt(k)))) {
-
           coordinates
               .append(" ( ")
               .append(i)
@@ -29,6 +27,7 @@ public class ReadFromFile {
               .append(" )")
               .append("\n");
           lettersWithCoordinates.add(String.valueOf(modelString.charAt(k)) + coordinates);
+          break;
         }
       }
     }
