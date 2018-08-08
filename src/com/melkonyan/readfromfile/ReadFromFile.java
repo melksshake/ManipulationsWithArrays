@@ -1,11 +1,10 @@
 package com.melkonyan.readfromfile;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 public class ReadFromFile {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
     final String modelString = "OneTwoTrip";
     final String errorMessage = "Impossible";
 

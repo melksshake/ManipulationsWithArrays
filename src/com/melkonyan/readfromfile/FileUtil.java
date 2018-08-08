@@ -47,6 +47,11 @@ public final class FileUtil implements FileUtilMethods {
     writeDataIntoFile(toFile.toString());
   }
 
+
+  /*
+  Если M - кол-во строк входного файла, N - кол-во сиволов в каждой строе,
+  то сложность алгоритма и расход паямяти будет: О(MxN + M) = O(MxN)
+   */
   @Override
   public List<String> proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile) {
     List<String> lettersWithCoordinates = new ArrayList<>();

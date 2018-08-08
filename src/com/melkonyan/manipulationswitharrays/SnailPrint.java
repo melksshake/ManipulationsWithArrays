@@ -67,7 +67,6 @@ public final class SnailPrint implements ArrayMethods {
           System.out.print(array[row][column] + " " + "[" + row + column + "] ");
           column--;
       }
-      System.out.print(" / ");
 
       if (row == 0 && column == -1) break; // we finished
 
@@ -75,19 +74,16 @@ public final class SnailPrint implements ArrayMethods {
         System.out.print(array[row][column] + " " + "[" + row + column + "] ");
         row++;
       }
-      System.out.print(" / ");
 
       for (int k = 0; k < stepsToGoRight; k++) { // going right
         System.out.print(array[row][column] + " " + "[" + row + column + "] ");
         column++;
       }
-      System.out.print(" / ");
 
       for (int k = 0; k < stepsToGoUp; k++) { // going up
         System.out.print(array[row][column] + " " + "[" + row + column + "] ");
         row--;
       }
-      System.out.print(" / ");
 
       stepsToGoLeft += 2;
       stepsToGoDown += 2;
