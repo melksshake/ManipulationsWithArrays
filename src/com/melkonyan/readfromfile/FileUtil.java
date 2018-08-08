@@ -39,11 +39,21 @@ public final class FileUtil implements FileUtilMethods {
   }
 
   @Override
-  public String proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile) {
+  public void writeDataIntoFile(List<String> data) {
     StringBuilder toFile = new StringBuilder();
+    for (String item : data) {
+      toFile.append(item);
+    }
+    writeDataIntoFile(toFile.toString());
+  }
+
+  @Override
+  public List<String> proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile) {
     List<String> lettersWithCoordinates = new ArrayList<>();
+    boolean isFoundChar = false;
 
     for (int k = 0; k < modelString.length(); k++) {
+      isFoundChar = false;
       for (int i = 1; i < dataFromFile.size(); i++) {
         StringBuilder coordinates = new StringBuilder();
         String charAtCurrentPosition = String.valueOf(modelString.charAt(k));
@@ -57,15 +67,16 @@ public final class FileUtil implements FileUtilMethods {
               .append(" )")
               .append("\n");
           lettersWithCoordinates.add(charAtCurrentPosition + coordinates);
+          isFoundChar = true;
           break;
+        }
+
+        if ((i == dataFromFile.size() - 1) && (!isFoundChar)) {
+          return null;
         }
       }
     }
 
-    for (String item : lettersWithCoordinates) {
-      toFile.append(item);
-    }
-
-    return toFile.toString();
+    return isFoundChar ? lettersWithCoordinates : null;
   }
 }

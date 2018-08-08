@@ -9,5 +9,6 @@ import java.util.List;
 public interface FileUtilMethods {
   List<String> readDataFromFile(@NotNull File file);
   void writeDataIntoFile(@NotNull String data);
-  @Nullable String proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile);
+  void writeDataIntoFile(@NotNull List<String> data);
+  @Nullable List<String> proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile);
 }
