@@ -4,7 +4,7 @@ import com.sun.istack.internal.NotNull;
 
 import java.security.SecureRandom;
 
-public final class SnailPrint implements ArrayMethods {
+public final class SnailPrint {
   private final int RANDOM_BOUND = 100;
 
   private int arraySize;
@@ -15,13 +15,11 @@ public final class SnailPrint implements ArrayMethods {
     localArray = new int[arraySize][arraySize];
   }
 
-  @Override
   public int[][] initArrayWithResult() {
     if (localArray == null) throw new NullPointerException("Array is empty");
     return localArray;
   }
 
-  @Override
   public void initArray() {
     SecureRandom src = new SecureRandom();
 
@@ -33,7 +31,6 @@ public final class SnailPrint implements ArrayMethods {
     }
   }
 
-  @Override
   public void printArray() {
     System.out.print("\nArray before manipulations: \n");
     for (int i = 0; i < localArray.length; i++) {
@@ -44,7 +41,6 @@ public final class SnailPrint implements ArrayMethods {
     }
   }
 
-  @Override
   public void printSpiral() {
     printSpiral(localArray);
   }

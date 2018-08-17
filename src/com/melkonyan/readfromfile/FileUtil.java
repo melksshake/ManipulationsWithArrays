@@ -6,13 +6,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class FileUtil implements FileUtilMethods {
+public final class FileUtil {
   private final String fileName = "output.txt";
 
   public FileUtil() {
   }
 
-  @Override
   public List<String> readDataFromFile(@NotNull File file) {
     List<String> fileLines = new ArrayList<>();
 
@@ -29,7 +28,6 @@ public final class FileUtil implements FileUtilMethods {
     return fileLines;
   }
 
-  @Override
   public void writeDataIntoFile(@NotNull String data) {
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
       writer.write(data);
@@ -38,7 +36,6 @@ public final class FileUtil implements FileUtilMethods {
     }
   }
 
-  @Override
   public void writeDataIntoFile(List<String> data) {
     StringBuilder toFile = new StringBuilder();
     for (String item : data) {
@@ -52,7 +49,6 @@ public final class FileUtil implements FileUtilMethods {
   Если M - кол-во строк входного файла, N - кол-во сиволов в каждой строе,
   то сложность алгоритма и расход паямяти будет: О(MxN + M) = O(MxN)
    */
-  @Override
   public List<String> proceedToCharPositions(@NotNull String modelString, @NotNull List<String> dataFromFile) {
     List<String> lettersWithCoordinates = new ArrayList<>();
     boolean isFoundChar = false;
